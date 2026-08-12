@@ -5,51 +5,35 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Timbuktu Chamber of Commerce | Business Directory</title>
+    <title>Thank You | Timbuktu Chamber of Commerce</title>
 
     <meta
         name="description"
-        content="Directory of businesses and members of the Timbuktu Chamber of Commerce."
+        content="Thank you for applying to join the Timbuktu Chamber of Commerce."
     >
 
     <meta name="author" content="Okon Victor John">
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet"
     >
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Timbuktu Chamber of Commerce">
-    <meta
-        property="og:description"
-        content="Explore local businesses and members of the Timbuktu Chamber of Commerce."
-    >
-    <meta
-        property="og:image"
-        content="https://lilmuller.github.io/wdd231/chamber/images/favicon.svg"
-    >
-    <meta
-        property="og:url"
-        content="https://lilmuller.github.io/wdd231/chamber/directory.html"
-    >
-    <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
-<body>
+<body class="join-page">
 
 <header>
     <div class="brand">
@@ -61,32 +45,72 @@
         </div>
     </div>
 
-    <button id="menu-button" aria-label="Open navigation">☰</button>
+    <button
+        id="menu-button"
+        aria-label="Open navigation menu"
+        type="button"
+    >
+        ☰
+    </button>
 </header>
 
 <nav id="navigation">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html" class="active">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-        <li><a href="#">Discover</a></li>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="directory.html">Directory</a>
+        </li>
+
+        <li>
+            <a href="join.html" class="active">Join</a>
+        </li>
+
+        <li>
+            <a href="#">Discover</a>
+        </li>
     </ul>
 </nav>
 
 <main>
-    <h1>Business Directory</h1>
 
-    <div class="view-buttons">
-        <button id="grid-view" aria-label="Grid view">▦</button>
-        <button id="list-view" aria-label="List view">☷</button>
-    </div>
+    <h1>Thank You!</h1>
 
-    <section id="members" class="grid"></section>
+    <section class="thank-you-section">
+
+        <h2>Membership Application Received</h2>
+
+        <p>
+            Thank you for your interest in joining the
+            Timbuktu Chamber of Commerce.
+        </p>
+
+        <p>
+            We have received the following information:
+        </p>
+
+        <div id="form-results"></div>
+
+        <p>
+            We look forward to connecting with your organization
+            and helping your business grow.
+        </p>
+
+        <a href="index.html" class="cta-button">
+            Return to Home
+        </a>
+
+    </section>
+
 </main>
 
 <footer>
+
     <div class="contact">
         <h3>Timbuktu Chamber of Commerce</h3>
+
         <p>10 Mali Plaza</p>
         <p>Timbuktu, Mali</p>
         <p>info@timbuktuchamber.org</p>
@@ -102,9 +126,15 @@
     <div class="development">
         <p>WDD 231</p>
         <p>Okon Victor John</p>
-        <p>© <span id="currentyear"></span> Timbuktu Chamber</p>
+
+        <p>
+            © <span id="currentyear"></span>
+            Timbuktu Chamber
+        </p>
+
         <p id="lastModified"></p>
     </div>
+
 </footer>
 
 </body>

@@ -117,10 +117,6 @@ footer a {
     margin-right: .75rem;
 }
 
-/* ========================================
-   CHAMBER HOME PAGE ONLY
-   ======================================== */
-
 .home-page .hero {
     position: relative;
     margin-bottom: 1.5rem;
@@ -241,4 +237,240 @@ footer a {
 
 .home-page .spotlight-info p {
     margin: 0.5rem 0;
+}
+
+
+.join-page .join-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.join-page .membership-form-section,
+.join-page .membership-levels {
+    background-color: #ffffff;
+}
+
+.join-page .membership-form-section h2,
+.join-page .membership-levels h2 {
+    margin-top: 0;
+    padding: 0.75rem 1rem;
+    background-color: #173f5f;
+    color: #ffffff;
+}
+
+
+/* FORM */
+
+.join-page form {
+    padding: 1rem;
+}
+
+.join-page form > label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.join-page form input[type="text"],
+.join-page form input[type="email"],
+.join-page form input[type="tel"],
+.join-page form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.join-page form input:focus,
+.join-page form textarea:focus {
+    outline: 3px solid #286f9c;
+    outline-offset: 1px;
+}
+
+
+/* MEMBERSHIP RADIO BUTTONS */
+
+.join-page fieldset {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #aaa;
+}
+
+.join-page legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+}
+
+.join-page fieldset label {
+    display: block;
+    margin: 0.75rem 0;
+    font-weight: 400;
+}
+
+.join-page fieldset input {
+    margin-right: 0.5rem;
+}
+
+
+/* SUBMIT */
+
+.join-page input[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1f5f8b;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.join-page input[type="submit"]:hover {
+    background-color: #286f9c;
+}
+
+
+/* MEMBERSHIP CARDS */
+
+.join-page .membership-levels {
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.join-page .membership-card {
+    margin: 0 1rem;
+    padding: 1.25rem;
+    border: 1px solid #aaa;
+    border-left: 6px solid #1f5f8b;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    animation: membershipEntrance 0.8s ease-out both;
+}
+
+.join-page .membership-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.join-page .membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.join-page .membership-card:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+.join-page .membership-card h3 {
+    margin-top: 0;
+    color: #173f5f;
+}
+
+.join-page .membership-card button {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #173f5f;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.join-page .membership-card button:hover {
+    background-color: #286f9c;
+}
+
+
+/* INITIAL PAGE-LOAD ANIMATION */
+
+@keyframes membershipEntrance {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* MODALS */
+
+.join-page dialog {
+    width: min(90%, 500px);
+    padding: 1.5rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 30%);
+}
+
+.join-page dialog::backdrop {
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.join-page dialog h2 {
+    margin-top: 0;
+    color: #173f5f;
+}
+
+.join-page dialog li {
+    margin-bottom: 0.75rem;
+}
+
+.join-page .close-modal {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #173f5f;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.join-page .close-modal:hover {
+    background-color: #286f9c;
+}
+
+
+.join-page .thank-you-section {
+    max-width: 750px;
+    margin: 0 auto 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+
+.join-page .thank-you-section h2 {
+    color: #173f5f;
+}
+
+.join-page .submitted-information {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 5px solid #1f5f8b;
+    background-color: #eef4f8;
+}
+
+.join-page .submitted-information p {
+    margin: 0.75rem 0;
+}
+
+.join-page .thank-you-section .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: #173f5f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.join-page .thank-you-section .cta-button:hover {
+    background-color: #286f9c;
 }

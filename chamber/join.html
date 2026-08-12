@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Timbuktu Chamber of Commerce</title>
+
+    <meta
+        name="description"
+        content="Join the Timbuktu Chamber of Commerce and connect your organization with local businesses and community opportunities."
+    >
+
+    <meta name="author" content="Okon Victor John">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Join the Timbuktu Chamber of Commerce"
+    >
+
+    <meta
+        property="og:description"
+        content="Become a member of the Timbuktu Chamber of Commerce."
+    >
+
+    <meta
+        property="og:image"
+        content="https://lilmuller.github.io/wdd231/chamber/images/hero.png"
+    >
+
+    <meta
+        property="og:url"
+        content="https://lilmuller.github.io/wdd231/chamber/join.html"
+    >
+
+    <meta property="og:type" content="website">
+
+    <!-- Existing Chamber CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Existing JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <!-- Join JavaScript -->
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body class="join-page">
+
+<header>
+    <div class="brand">
+        <div class="logo">TC</div>
+
+        <div>
+            <span class="site-name">Timbuktu Chamber</span>
+            <span class="site-subtitle">of Commerce</span>
+        </div>
+    </div>
+
+    <button
+        id="menu-button"
+        aria-label="Open navigation menu"
+        type="button"
+    >
+        ☰
+    </button>
+</header>
+
+<nav id="navigation">
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="directory.html">Directory</a>
+        </li>
+
+        <li>
+            <a href="join.html" class="active">Join</a>
+        </li>
+
+        <li>
+            <a href="#">Discover</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+
+        <!-- FORM -->
+        <section class="membership-form-section">
+
+            <h2>Membership Application</h2>
+
+            <form
+                method="get"
+                action="thankyou.html"
+            >
+
+                <label for="firstName">
+                    First Name
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        title="Enter your first name."
+                        autocomplete="given-name"
+                        required
+                    >
+                </label>
+
+
+                <label for="lastName">
+                    Last Name
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        title="Enter your last name."
+                        autocomplete="family-name"
+                        required
+                    >
+                </label>
+
+
+                <label for="organizationTitle">
+                    Organizational Title
+                    <input
+                        type="text"
+                        id="organizationTitle"
+                        name="organizationTitle"
+                        title="Enter your organizational title using at least seven characters. Only letters, spaces, and hyphens are allowed."
+                        autocomplete="organization-title"
+                        pattern="[A-Za-zÀ-ÿ\s-]{7,}"
+                    >
+                </label>
+
+
+                <label for="email">
+                    Email Address
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        title="Enter your email address."
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+                </label>
+
+
+                <label for="phone">
+                    Mobile Phone Number
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        title="Enter your mobile phone number."
+                        autocomplete="tel"
+                        required
+                    >
+                </label>
+
+
+                <label for="organization">
+                    Business / Organization Name
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        title="Enter your business or organization name."
+                        autocomplete="organization"
+                        required
+                    >
+                </label>
+
+
+                <fieldset>
+
+                    <legend>Membership Level</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="np"
+                            required
+                        >
+                        NP Membership — No Fee
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="bronze"
+                        >
+                        Bronze Membership
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="silver"
+                        >
+                        Silver Membership
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="gold"
+                        >
+                        Gold Membership
+                    </label>
+
+                </fieldset>
+
+
+                <label for="description">
+                    Business / Organization Description
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        title="Describe your business or organization."
+                        rows="6"
+                    ></textarea>
+                </label>
+
+
+                <input
+                    type="hidden"
+                    id="timestamp"
+                    name="timestamp"
+                >
+
+
+                <input
+                    type="submit"
+                    value="Submit Membership Application"
+                >
+
+            </form>
+
+        </section>
+
+
+        <!-- MEMBERSHIP CARDS -->
+        <section class="membership-levels">
+
+            <h2>Membership Levels</h2>
+
+
+            <article class="membership-card">
+
+                <h3>NP Membership</h3>
+
+                <p>For nonprofit organizations.</p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="np-modal"
+                >
+                    Learn More
+                </button>
+
+            </article>
+
+
+            <article class="membership-card">
+
+                <h3>Bronze Membership</h3>
+
+                <p>Essential benefits for growing businesses.</p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="bronze-modal"
+                >
+                    Learn More
+                </button>
+
+            </article>
+
+
+            <article class="membership-card">
+
+                <h3>Silver Membership</h3>
+
+                <p>Additional exposure and business benefits.</p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="silver-modal"
+                >
+                    Learn More
+                </button>
+
+            </article>
+
+
+            <article class="membership-card">
+
+                <h3>Gold Membership</h3>
+
+                <p>Maximum visibility and premium benefits.</p>
+
+                <button
+                    type="button"
+                    class="modal-button"
+                    data-modal="gold-modal"
+                >
+                    Learn More
+                </button>
+
+            </article>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<!-- MODALS -->
+
+<dialog id="np-modal">
+
+    <h2>NP Membership Benefits</h2>
+
+    <ul>
+        <li>No membership fee</li>
+        <li>Access to chamber networking events</li>
+        <li>Community resources</li>
+        <li>Nonprofit organization support</li>
+    </ul>
+
+    <button class="close-modal" type="button">
+        Close
+    </button>
+
+</dialog>
+
+
+<dialog id="bronze-modal">
+
+    <h2>Bronze Membership Benefits</h2>
+
+    <ul>
+        <li>All NP membership benefits</li>
+        <li>Business networking opportunities</li>
+        <li>Training workshops</li>
+        <li>Event participation discounts</li>
+    </ul>
+
+    <button class="close-modal" type="button">
+        Close
+    </button>
+
+</dialog>
+
+
+<dialog id="silver-modal">
+
+    <h2>Silver Membership Benefits</h2>
+
+    <ul>
+        <li>All Bronze membership benefits</li>
+        <li>Advertising opportunities</li>
+        <li>Additional event discounts</li>
+        <li>Priority networking opportunities</li>
+        <li>Business spotlight opportunities</li>
+    </ul>
+
+    <button class="close-modal" type="button">
+        Close
+    </button>
+
+</dialog>
+
+
+<dialog id="gold-modal">
+
+    <h2>Gold Membership Benefits</h2>
+
+    <ul>
+        <li>All Silver membership benefits</li>
+        <li>Premium advertising</li>
+        <li>Home page spotlight opportunities</li>
+        <li>Premium event placement</li>
+        <li>Exclusive networking events</li>
+        <li>Priority training opportunities</li>
+    </ul>
+
+    <button class="close-modal" type="button">
+        Close
+    </button>
+
+</dialog>
+
+
+<footer>
+
+    <div class="contact">
+        <h3>Timbuktu Chamber of Commerce</h3>
+
+        <p>10 Mali Plaza</p>
+        <p>Timbuktu, Mali</p>
+        <p>info@timbuktuchamber.org</p>
+        <p>+223 5555 0100</p>
+    </div>
+
+    <div class="social">
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+    </div>
+
+    <div class="development">
+        <p>WDD 231</p>
+
+        <p>Okon Victor John</p>
+
+        <p>
+            © <span id="currentyear"></span>
+            Timbuktu Chamber
+        </p>
+
+        <p id="lastModified"></p>
+    </div>
+
+</footer>
+
+</body>
+</html>

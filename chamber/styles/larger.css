@@ -62,4 +62,20 @@
     .home-page #spotlight-container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* JOIN PAGE - LARGE SCREENS */
+
+    .join-page .join-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+        align-items: start;
+    }
+
+    .join-page .membership-levels {
+        position: sticky;
+        top: 1rem;
+    }
+
+    .join-page .membership-card {
+        margin: 0 1rem;
+    }
 }
