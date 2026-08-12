@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markets | ForexEdge</title>
+<meta name="description" content="Explore 15 forex, commodity, index, and crypto markets with searchable data, filters, details, and favorites.">
+<meta name="author" content="Okon Victor John">
+<meta property="og:title" content="Markets | ForexEdge">
+<meta property="og:description" content="Explore 15 forex, commodity, index, and crypto markets with searchable data, filters, details, and favorites.">
+<meta property="og:image" content="https://lilmuller.github.io/wdd231/final/images/social-preview.jpg">
+<meta property="og:url" content="https://lilmuller.github.io/wdd231/final/market.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script src="scripts/main.js" defer></script>
+<script type="module" src="scripts/market.js" defer></script>
+</head>
+<body data-page="market">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="ForexEdge home">
+      <img src="images/logo.svg" alt="ForexEdge">
+    </a>
+    <button id="menu-button" class="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">
+      ☰ <span class="visually-hidden">Menu</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="market.html" data-page="market">Markets</a></li>
+        <li><a href="journal.html" data-page="journal">Journal</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+  <div class="container">
+    <p class="eyebrow">Market explorer</p>
+    <h1>Explore markets</h1>
+    <p class="section-intro">Search the market catalog, filter by category, open detailed information, and save instruments to your browser.</p>
+
+    <section class="market-toolbar" aria-label="Market filters">
+      <div>
+        <label class="field-label" for="market-search">Search markets</label>
+        <input id="market-search" type="search" placeholder="Try EUR/USD, gold, index..." autocomplete="off">
+      </div>
+      <div>
+        <label class="field-label" for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="all">All categories</option>
+        </select>
+      </div>
+    </section>
+
+    <p id="market-status" class="status" aria-live="polite">Loading markets...</p>
+    <section id="market-grid" class="card-grid market-grid" aria-label="Market instruments"></section>
+  </div>
+</main>
+
+<dialog id="market-dialog" aria-labelledby="dialog-content">
+  <div class="modal-inner">
+    <button id="close-dialog" class="icon-button modal-close" type="button">Close</button>
+    <div id="dialog-content"></div>
+  </div>
+</dialog>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-title">ForexEdge</p>
+      <p>Learn the market. Build your edge.</p>
+    </div>
+    <div>
+      <p class="footer-title">Resources</p>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://YOUR-VIDEO-LINK.example" target="_blank" rel="noopener">Project Video</a>
+      </div>
+    </div>
+    <div>
+      <p>© <span id="currentyear"></span> ForexEdge · Okon Victor John</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+      <p class="disclaimer">ForexEdge is an educational student project. Nothing on this site is financial advice or a promise of investment results.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "EUR/USD",
+    "name": "Euro / US Dollar",
+    "category": "Major",
+    "session": "London + New York",
+    "volatility": "Moderate",
+    "description": "The world's most traded currency pair, commonly used to study market structure, liquidity, and macroeconomic momentum."
+  },
+  {
+    "symbol": "GBP/USD",
+    "name": "British Pound / US Dollar",
+    "category": "Major",
+    "session": "London + New York",
+    "volatility": "High",
+    "description": "A highly liquid major pair that can produce larger intraday moves around UK and US economic releases."
+  },
+  {
+    "symbol": "USD/JPY",
+    "name": "US Dollar / Japanese Yen",
+    "category": "Major",
+    "session": "Tokyo + New York",
+    "volatility": "Moderate",
+    "description": "A major pair influenced by US yields, Japanese monetary policy, and changing risk sentiment."
+  },
+  {
+    "symbol": "USD/CHF",
+    "name": "US Dollar / Swiss Franc",
+    "category": "Major",
+    "session": "London + New York",
+    "volatility": "Moderate",
+    "description": "A major pair often associated with defensive flows and changes in global risk appetite."
+  },
+  {
+    "symbol": "AUD/USD",
+    "name": "Australian Dollar / US Dollar",
+    "category": "Major",
+    "session": "Sydney + New York",
+    "volatility": "Moderate",
+    "description": "A liquid commodity-linked pair influenced by Australian data, Chinese demand, and broad US dollar conditions."
+  },
+  {
+    "symbol": "USD/CAD",
+    "name": "US Dollar / Canadian Dollar",
+    "category": "Major",
+    "session": "New York",
+    "volatility": "Moderate",
+    "description": "A major North American pair that can react strongly to oil prices, Canadian data, and US economic conditions."
+  },
+  {
+    "symbol": "NZD/USD",
+    "name": "New Zealand Dollar / US Dollar",
+    "category": "Major",
+    "session": "Sydney + New York",
+    "volatility": "Moderate",
+    "description": "A liquid major pair influenced by New Zealand monetary policy, commodity sentiment, and global risk appetite."
+  },
+  {
+    "symbol": "EUR/GBP",
+    "name": "Euro / British Pound",
+    "category": "Cross",
+    "session": "London",
+    "volatility": "Low",
+    "description": "A European cross that can offer clean relative-strength themes when UK and euro-area expectations diverge."
+  },
+  {
+    "symbol": "EUR/JPY",
+    "name": "Euro / Japanese Yen",
+    "category": "Cross",
+    "session": "London + Tokyo",
+    "volatility": "High",
+    "description": "A volatile cross that combines European and Japanese monetary-policy expectations with broader risk sentiment."
+  },
+  {
+    "symbol": "GBP/JPY",
+    "name": "British Pound / Japanese Yen",
+    "category": "Cross",
+    "session": "London + Tokyo",
+    "volatility": "Very High",
+    "description": "A fast-moving cross often watched by active traders for large intraday ranges and momentum."
+  },
+  {
+    "symbol": "XAU/USD",
+    "name": "Gold / US Dollar",
+    "category": "Commodity",
+    "session": "London + New York",
+    "volatility": "High",
+    "description": "Gold priced in US dollars, widely followed for inflation, real-yield, geopolitical, and risk-sentiment themes."
+  },
+  {
+    "symbol": "NAS100",
+    "name": "Nasdaq 100",
+    "category": "Index",
+    "session": "New York",
+    "volatility": "High",
+    "description": "A technology-heavy US equity index used by traders to study momentum, volatility, and risk-on behavior."
+  },
+  {
+    "symbol": "US30",
+    "name": "Dow Jones 30",
+    "category": "Index",
+    "session": "New York",
+    "volatility": "Moderate",
+    "description": "A major US equity index representing large established companies and broad market sentiment."
+  },
+  {
+    "symbol": "SPX500",
+    "name": "S&P 500",
+    "category": "Index",
+    "session": "New York",
+    "volatility": "Moderate",
+    "description": "A broad US equity benchmark frequently used as a reference for overall risk appetite and market direction."
+  },
+  {
+    "symbol": "BTC/USD",
+    "name": "Bitcoin / US Dollar",
+    "category": "Crypto",
+    "session": "24 Hours",
+    "volatility": "Very High",
+    "description": "A continuously traded digital asset market known for substantial volatility and around-the-clock price movement."
+  }
+]

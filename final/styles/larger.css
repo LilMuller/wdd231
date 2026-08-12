@@ -1,0 +1,18 @@
+
+@media (min-width:700px){
+  .menu-button{display:none}
+  .header-inner{min-height:80px}
+  .primary-nav{display:block}
+  .primary-nav ul{flex-direction:row;align-items:center}
+  .primary-nav a{padding:.55rem .8rem}
+  .hero{grid-template-columns:1.05fr .95fr;padding:4rem 0}
+  .card-grid.three{grid-template-columns:repeat(3,1fr)}
+  .market-toolbar{grid-template-columns:1.5fr .7fr}
+  .market-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .form-layout{grid-template-columns:1fr 1fr}
+  .full{grid-column:1/-1}
+  .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+}
+@media (min-width:1000px){
+  .market-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}

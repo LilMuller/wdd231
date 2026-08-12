@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Journal | ForexEdge</title>
+<meta name="description" content="Use the ForexEdge trading journal to record trade decisions and review your process using browser storage.">
+<meta name="author" content="Okon Victor John">
+<meta property="og:title" content="Trading Journal | ForexEdge">
+<meta property="og:description" content="Use the ForexEdge trading journal to record trade decisions and review your process using browser storage.">
+<meta property="og:image" content="https://lilmuller.github.io/wdd231/final/images/social-preview.jpg">
+<meta property="og:url" content="https://lilmuller.github.io/wdd231/final/journal.html">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+<script src="scripts/main.js" defer></script>
+<script type="module" src="scripts/journal.js" defer></script>
+</head>
+<body data-page="journal">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="ForexEdge home">
+      <img src="images/logo.svg" alt="ForexEdge">
+    </a>
+    <button id="menu-button" class="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">
+      ☰ <span class="visually-hidden">Menu</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-page="home">Home</a></li>
+        <li><a href="market.html" data-page="market">Markets</a></li>
+        <li><a href="journal.html" data-page="journal">Journal</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+  <div class="container">
+    <p class="eyebrow">Process over prediction</p>
+    <h1>Trading journal</h1>
+    <p class="section-intro">Record your trade plan and review your decisions. Entries are stored locally in this browser.</p>
+
+    <section class="form-layout">
+      <form id="journal-form" class="form-card">
+        <div class="form-field">
+          <label for="symbol">Market</label>
+          <input id="symbol" name="symbol" required placeholder="EUR/USD">
+        </div>
+        <div class="form-field">
+          <label for="direction">Direction</label>
+          <select id="direction" name="direction" required>
+            <option value="">Select</option>
+            <option>Long</option>
+            <option>Short</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="entry">Entry</label>
+          <input id="entry" name="entry" required>
+        </div>
+        <div class="form-field">
+          <label for="stop">Stop loss</label>
+          <input id="stop" name="stop" required>
+        </div>
+        <div class="form-field">
+          <label for="target">Take profit</label>
+          <input id="target" name="target" required>
+        </div>
+        <div class="form-field">
+          <label for="result">Result</label>
+          <select id="result" name="result" required>
+            <option value="">Select</option>
+            <option>Planned</option>
+            <option>Win</option>
+            <option>Loss</option>
+            <option>Break even</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label for="notes">Trade notes</label>
+          <textarea id="notes" name="notes" required placeholder="What was your setup, context, and execution?"></textarea>
+        </div>
+        <button class="button" type="submit">Save journal entry</button>
+      </form>
+
+      <section class="form-card" aria-labelledby="journal-heading">
+        <h2 id="journal-heading">Recent entries</h2>
+        <p id="journal-empty" class="empty">No journal entries yet. Your saved entries will appear here.</p>
+        <div id="journal-list" class="list"></div>
+      </section>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-title">ForexEdge</p>
+      <p>Learn the market. Build your edge.</p>
+    </div>
+    <div>
+      <p class="footer-title">Resources</p>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="https://YOUR-VIDEO-LINK.example" target="_blank" rel="noopener">Project Video</a>
+      </div>
+    </div>
+    <div>
+      <p>© <span id="currentyear"></span> ForexEdge · Okon Victor John</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+      <p class="disclaimer">ForexEdge is an educational student project. Nothing on this site is financial advice or a promise of investment results.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
