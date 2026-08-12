@@ -40,6 +40,7 @@ header {
 
 nav {
     background-color: #292929;
+    display: none;
 }
 
 nav ul {
@@ -198,10 +199,6 @@ footer {
 
 footer p {
     margin: 5px 0;
-}
-
-nav {
-    display: none;
 }
 
 nav.open {
