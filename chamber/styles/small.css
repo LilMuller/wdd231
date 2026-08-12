@@ -474,3 +474,144 @@ footer a {
 .join-page .thank-you-section .cta-button:hover {
     background-color: #286f9c;
 }
+
+/* ========================================
+   DISCOVER PAGE
+   ======================================== */
+
+.discover-page {
+    width: 100%;
+}
+
+.discover-page .visit-message {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 5px solid #1f5f8b;
+    background-color: #eef4f8;
+    font-weight: 500;
+}
+
+.discover-page .discover-grid {
+    display: grid;
+
+    gap: 1rem;
+
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8";
+}
+
+.discover-page .area-1 {
+    grid-area: area1;
+}
+
+.discover-page .area-2 {
+    grid-area: area2;
+}
+
+.discover-page .area-3 {
+    grid-area: area3;
+}
+
+.discover-page .area-4 {
+    grid-area: area4;
+}
+
+.discover-page .area-5 {
+    grid-area: area5;
+}
+
+.discover-page .area-6 {
+    grid-area: area6;
+}
+
+.discover-page .area-7 {
+    grid-area: area7;
+}
+
+.discover-page .area-8 {
+    grid-area: area8;
+}
+
+
+.discover-page .discover-card {
+    overflow: hidden;
+
+    border: 1px solid #ccc;
+
+    background-color: #ffffff;
+}
+
+
+.discover-page .discover-card h2 {
+    margin: 0;
+    padding: 0.75rem 1rem;
+
+    background-color: #173f5f;
+    color: #ffffff;
+
+    font-size: 1.2rem;
+}
+
+
+.discover-page .discover-card figure {
+    margin: 0;
+}
+
+
+.discover-page .discover-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 3 / 2;
+
+    object-fit: cover;
+}
+
+
+.discover-page .discover-card address {
+    padding: 0.75rem 1rem 0;
+
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+.discover-page .discover-card p {
+    padding: 0 1rem;
+
+    line-height: 1.6;
+}
+
+
+.discover-page .discover-card button {
+    margin: 0 1rem 1rem;
+
+    padding: 0.65rem 1rem;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #173f5f;
+    color: #ffffff;
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.discover-page .discover-card button:hover {
+    background-color: #1f5f8b;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Discover | Timbuktu Chamber of Commerce</title>
+
+    <meta
+        name="description"
+        content="Discover historic landmarks, cultural attractions, businesses, and places of interest in Timbuktu, Mali."
+    >
+
+    <meta
+        name="author"
+        content="Okon Victor John"
+    >
+
+    <link
+        rel="icon"
+        href="images/favicon.svg"
+        type="image/svg+xml"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/normalize.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/small.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/medium.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/larger.css"
+    >
+
+    <script
+        src="scripts/navigation.js"
+        defer
+    ></script>
+
+    <script
+        src="scripts/date.js"
+        defer
+    ></script>
+
+    <script
+        src="scripts/discover.js"
+        type="module"
+    ></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">TC</div>
+
+            <div>
+                <span class="site-name">Timbuktu Chamber</span>
+                <span class="site-subtitle">of Commerce</span>
+            </div>
+        </div>
+
+        <button
+            id="menu-button"
+            aria-label="Open navigation menu"
+            type="button"
+        >
+            ☰
+        </button>
+    </header>
+
+
+    <nav id="navigation">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li>
+                <a href="join.html">Join</a>
+            </li>
+
+            <li>
+                <a href="discover.html" class="active">Discover</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- DISCOVER CONTENT -->
+    <main class="discover-page">
+
+        <h1>Discover Timbuktu</h1>
+
+        <section
+            id="visit-message"
+            class="visit-message"
+            aria-live="polite"
+        ></section>
+
+        <section
+            id="discover-grid"
+            class="discover-grid"
+            aria-label="Places of interest in Timbuktu"
+        >
+            <!-- JavaScript creates the eight cards here -->
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="contact">
+            <h3>Timbuktu Chamber of Commerce</h3>
+
+            <p>10 Mali Plaza</p>
+            <p>Timbuktu, Mali</p>
+            <p>info@timbuktuchamber.org</p>
+            <p>+223 5555 0100</p>
+        </div>
+
+        <div class="social">
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+
+        <div class="development">
+            <p>WDD 231</p>
+
+            <p>Okon Victor John</p>
+
+            <p>
+                © <span id="currentyear"></span>
+                Timbuktu Chamber
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
