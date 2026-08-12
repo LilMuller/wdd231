@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     color: #222;
 }
@@ -62,7 +62,7 @@ nav a {
 
 nav a.active,
 nav a:hover {
-    background: #2d7fb3;
+    background: #286f9c;
 }
 
 main {
