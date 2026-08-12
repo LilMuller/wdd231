@@ -116,3 +116,129 @@ footer a {
     color: white;
     margin-right: .75rem;
 }
+
+/* ========================================
+   CHAMBER HOME PAGE ONLY
+   ======================================== */
+
+.home-page .hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.home-page .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-page .hero-content {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background-color: rgb(23 63 95 / 90%);
+    color: white;
+}
+
+.home-page .hero-content h1 {
+    margin: 0 0 0.5rem;
+}
+
+.home-page .hero-content p {
+    margin: 0 0 1rem;
+}
+
+.home-page .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+    color: #173f5f;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.home-page .home-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.home-page .home-section {
+    border: 1px solid #ccc;
+}
+
+.home-page .home-section > h2 {
+    margin: 0;
+    padding: 0.75rem;
+    background-color: #173f5f;
+    color: #ffffff;
+}
+
+.home-page .event {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.home-page .event:last-child {
+    border-bottom: none;
+}
+
+.home-page .current-weather-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.home-page .temperature {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.home-page #forecast {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.home-page .forecast-card {
+    padding: 0.75rem;
+    text-align: center;
+    background-color: #eef4f8;
+    border: 1px solid #cbdbe5;
+}
+
+.home-page #spotlight-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.home-page .spotlight-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.home-page .spotlight-card img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.home-page .membership {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #173f5f;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.home-page .spotlight-info p {
+    margin: 0.5rem 0;
+}
