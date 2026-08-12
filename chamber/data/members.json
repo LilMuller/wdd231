@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Desert Tech Solutions",
+    "address": "12 Sahara Avenue, Timbuktu",
+    "phone": "+223 5555 1001",
+    "website": "https://example.com",
+    "image": "business1.webp",
+    "membership": 3,
+    "description": "Technology services and software consulting."
+  },
+  {
+    "name": "Niger River Logistics",
+    "address": "8 River Road, Timbuktu",
+    "phone": "+223 5555 1002",
+    "website": "https://example.com",
+    "image": "business2.webp",
+    "membership": 2,
+    "description": "Transportation and logistics services."
+  },
+  {
+    "name": "Mali Market Traders",
+    "address": "24 Market Square, Timbuktu",
+    "phone": "+223 5555 1003",
+    "website": "https://example.com",
+    "image": "business3.webp",
+    "membership": 1,
+    "description": "Local retail and wholesale business."
+  },
+  {
+    "name": "Golden Dunes Hotel",
+    "address": "5 Oasis Drive, Timbuktu",
+    "phone": "+223 5555 1004",
+    "website": "https://example.com",
+    "image": "business4.webp",
+    "membership": 3,
+    "description": "Hospitality and tourism."
+  },
+  {
+    "name": "Ancient City Tours",
+    "address": "19 Heritage Lane, Timbuktu",
+    "phone": "+223 5555 1005",
+    "website": "https://example.com",
+    "image": "business5.webp",
+    "membership": 2,
+    "description": "Guided cultural tours."
+  },
+  {
+    "name": "Sahel Construction",
+    "address": "31 Builders Street, Timbuktu",
+    "phone": "+223 5555 1006",
+    "website": "https://example.com",
+    "image": "business6.webp",
+    "membership": 1,
+    "description": "Construction and engineering."
+  },
+  {
+    "name": "Oasis Agriculture",
+    "address": "14 Green Road, Timbuktu",
+    "phone": "+223 5555 1007",
+    "website": "https://example.com",
+    "image": "business7.webp",
+    "membership": 2,
+    "description": "Agricultural supplies and farming."
+  }
+]
