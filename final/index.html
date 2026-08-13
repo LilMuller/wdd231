@@ -36,138 +36,138 @@
 </head>
 
 <body data-page="home">
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="ForexEdge home">
-      <img src="images/logo.svg" alt="ForexEdge">
-    </a>
-    <button id="menu-button" class="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">
-      ☰ <span class="visually-hidden">Menu</span>
-    </button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html" data-page="home">Home</a></li>
-        <li><a href="market.html" data-page="market">Markets</a></li>
-        <li><a href="journal.html" data-page="journal">Journal</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main id="main-content">
-  <div class="container">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Trading education</p>
-        <h1>Learn the market. Build your edge.</h1>
-        <p>ForexEdge is a practical learning hub for traders who want to understand markets, develop discipline, and make decisions from a defined process.</p>
-        <div class="button-row">
-          <a class="button" href="market.html">Explore Markets</a>
-          <a class="button secondary" href="journal.html">Open Journal</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ForexEdge home">
+        <img src="images/logo.svg" alt="ForexEdge">
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-controls="primary-nav" aria-expanded="false">
+        ☰ <span class="visually-hidden">Menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="market.html" data-page="market">Markets</a></li>
+          <li><a href="journal.html" data-page="journal">Journal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <div class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Trading education</p>
+          <h1>Learn the market. Build your edge.</h1>
+          <p>ForexEdge is a practical learning hub for traders who want to understand markets, develop discipline, and make decisions from a defined process.</p>
+          <div class="button-row">
+            <a class="button" href="market.html">Explore Markets</a>
+            <a class="button secondary" href="journal.html">Open Journal</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="images/social-preview.jpg" alt="ForexEdge trading education graphic" width="1200" height="630">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured</p>
+            <h2>Know what you trade</h2>
+            <p class="section-intro">Explore a curated set of forex, commodity, index, and crypto instruments. The cards below are loaded dynamically from a JSON data source.</p>
+          </div>
+        </div>
+        <p id="featured-status" class="status">Loading featured markets...</p>
+        <div id="featured-markets" class="card-grid three"></div>
+      </section>
+
+      <section class="section card-grid three">
+        <article class="feature-card">
+          <strong>01</strong>
+          <h2>Structure</h2>
+          <p>Study highs, lows, trends, ranges, liquidity, and the context surrounding price movement.</p>
+        </article>
+        <article class="feature-card">
+          <strong>02</strong>
+          <h2>Risk</h2>
+          <p>Build a process where position sizing and downside are considered before the trade is taken.</p>
+        </article>
+        <article class="feature-card">
+          <strong>03</strong>
+          <h2>Discipline</h2>
+          <p>Use a journal to record decisions, review outcomes, and turn experience into repeatable habits.</p>
+        </article>
+      </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Connect</p>
+        <h2>Share your trading challenge</h2>
+        <p class="section-intro">Tell us what you are currently trying to improve. This form is for the student project demonstration and does not provide financial advice.</p>
+      </div>
+    </div>
+    <form class="form-card" method="get" action="thankyou.html">
+      <div class="form-layout">
+        <div class="form-field">
+          <label for="firstName">First name</label>
+          <input id="firstName" name="firstName" autocomplete="given-name" required>
+        </div>
+        <div class="form-field">
+          <label for="lastName">Last name</label>
+          <input id="lastName" name="lastName" autocomplete="family-name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-field">
+          <label for="experience">Trading experience</label>
+          <select id="experience" name="experience" required>
+            <option value="">Select</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="market">Favorite market</label>
+          <input id="market" name="market" placeholder="EUR/USD">
+        </div>
+        <div class="form-field full">
+          <label for="message">What are you working to improve?</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="full">
+          <button class="button" type="submit">Submit</button>
         </div>
       </div>
-      <div class="hero-art">
-        <img src="images/social-preview.jpg" alt="ForexEdge trading education graphic" width="1200" height="630">
-      </div>
-    </section>
+    </form>
+  </section>
 
-    <section class="section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Featured</p>
-          <h2>Know what you trade</h2>
-          <p class="section-intro">Explore a curated set of forex, commodity, index, and crypto instruments. The cards below are loaded dynamically from a JSON data source.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">ForexEdge</p>
+        <p>Learn the market. Build your edge.</p>
+      </div>
+      <div>
+        <p class="footer-title">Resources</p>
+        <div class="footer-links">
+          <a href="attributions.html">Attributions</a>
+          <a href="https://YOUR-VIDEO-LINK.example" target="_blank" rel="noopener">Project Video</a>
         </div>
       </div>
-      <p id="featured-status" class="status">Loading featured markets...</p>
-      <div id="featured-markets" class="card-grid three"></div>
-    </section>
-
-    <section class="section card-grid three">
-      <article class="feature-card">
-        <strong>01</strong>
-        <h2>Structure</h2>
-        <p>Study highs, lows, trends, ranges, liquidity, and the context surrounding price movement.</p>
-      </article>
-      <article class="feature-card">
-        <strong>02</strong>
-        <h2>Risk</h2>
-        <p>Build a process where position sizing and downside are considered before the trade is taken.</p>
-      </article>
-      <article class="feature-card">
-        <strong>03</strong>
-        <h2>Discipline</h2>
-        <p>Use a journal to record decisions, review outcomes, and turn experience into repeatable habits.</p>
-      </article>
-    </section>
-
-<section class="section">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">Connect</p>
-      <h2>Share your trading challenge</h2>
-      <p class="section-intro">Tell us what you are currently trying to improve. This form is for the student project demonstration and does not provide financial advice.</p>
-    </div>
-  </div>
-  <form class="form-card" method="get" action="thankyou.html">
-    <div class="form-layout">
-      <div class="form-field">
-        <label for="firstName">First name</label>
-        <input id="firstName" name="firstName" autocomplete="given-name" required>
-      </div>
-      <div class="form-field">
-        <label for="lastName">Last name</label>
-        <input id="lastName" name="lastName" autocomplete="family-name" required>
-      </div>
-      <div class="form-field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-      </div>
-      <div class="form-field">
-        <label for="experience">Trading experience</label>
-        <select id="experience" name="experience" required>
-          <option value="">Select</option>
-          <option>Beginner</option>
-          <option>Intermediate</option>
-          <option>Advanced</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label for="market">Favorite market</label>
-        <input id="market" name="market" placeholder="EUR/USD">
-      </div>
-      <div class="form-field full">
-        <label for="message">What are you working to improve?</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <div class="full">
-        <button class="button" type="submit">Submit</button>
+      <div>
+        <p>© <span id="currentyear"></span> ForexEdge · Okon Victor John</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+        <p class="disclaimer">ForexEdge is an educational student project. Nothing on this site is financial advice or a promise of investment results.</p>
       </div>
     </div>
-  </form>
-</section>
-
-  </div>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <p class="footer-title">ForexEdge</p>
-      <p>Learn the market. Build your edge.</p>
-    </div>
-    <div>
-      <p class="footer-title">Resources</p>
-      <div class="footer-links">
-        <a href="attributions.html">Attributions</a>
-        <a href="https://YOUR-VIDEO-LINK.example" target="_blank" rel="noopener">Project Video</a>
-      </div>
-    </div>
-    <div>
-      <p>© <span id="currentyear"></span> ForexEdge · Okon Victor John</p>
-      <p>Last modified: <span id="lastModified"></span></p>
-      <p class="disclaimer">ForexEdge is an educational student project. Nothing on this site is financial advice or a promise of investment results.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
